@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     environment {
-        DEPLOY_DIR = 'noat/frontend'
+        DEPLOY_DIR = '/home/ubuntu/noat/frontend'
         BRANCH = 'staging'
     }
 
