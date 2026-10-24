@@ -1,0 +1,294 @@
+.emailLoginWrapper {
+  height: 100vh;
+  width: 100vw;
+  background: #001220;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  color: white;
+  animation: fadeIn 0.3s ease;
+}
+
+.backBtn {
+    align-self: flex;
+    margin-right: auto;
+    border: none;
+    color: #9ca3af;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 1px 30px;
+    width: fit-content;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* INPUT BOX */
+.inputBox {
+  width: 320px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-size: 16px;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+  margin-bottom: 20px;
+}
+
+
+.inputBox:focus {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.6);
+}
+
+/* MAIN BUTTON */
+.nextBtn {
+  padding: 12px 28px;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.25s ease;
+}
+
+.nextBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.5);
+}
+
+.nextBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* OTP ROW */
+.otpRow {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* OTP BOXES */
+.otpInput {
+  width: 50px;
+  height: 58px;
+  text-align: center;
+  font-size: 22px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.otpInput:focus {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.07);
+  border: 2px solid #3b82f6;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.6);
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.resendBtn {
+  background: transparent;
+  color: #4fb3ff;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.resendBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.linkText {
+  color:#007bff;
+  cursor: pointer;    
+  font-size: 14px;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+.linkText:hover {
+  color: #0056b3;
+}
+
+.passwordRules {
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.rule {
+  margin: 3px 0;
+}
+
+.rule.ok {
+  color: #28a745;
+}
+
+.rule.bad {
+  color: #dc3545;
+}
+
+.errorText {
+  color: salmon;
+  margin-top: 8px;
+}
+
+/* ================= FACE WRAPPER ================= */
+.faceWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  max-height: calc(100vh - 140px); /* IMPORTANT */
+  overflow-y: auto;
+
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+/* Compact mode */
+.faceWrapper.compact {
+  gap: 12px;
+}
+
+/* ================= VIDEO ================= */
+.faceVideo {
+  width: 100%;
+  max-width: 320px;
+  max-height: 240px;     /* LIMIT HEIGHT */
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* ================= TEXT ================= */
+.statusText {
+  text-align: center;
+  font-size: 14px;
+  color: #e5e7eb;
+  line-height: 1.4;
+  margin: 6px 0;
+}
+
+.attemptText {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* ================= BUTTONS ================= */
+.faceWrapper .nextBtn {
+  width: 100%;
+  max-width: 220px;
+}
+
+/* Safety */
+.faceWrapper button {
+  flex-shrink: 0;
+}
+
+.actionRow {
+  display: flex;
+}
+
+.actionRow .backBtn {
+  flex: 0 0 auto;     
+}
+
+.roleSelectWrapper {
+  width: 320px;
+  margin-bottom: 18px;
+}
+
+.roleLabel {
+  font-size: 13px;
+  color: #9ca3af;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.roleSelect {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.12);
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 15px;
+}
+
+.roleSelect option {
+  background: #020617;
+  color: white;
+}
+
+.countdownBar{
+  width:100%;
+  height:6px;
+  background:#ddd;
+  border-radius:10px;
+  margin:10px 0;
+  overflow:hidden;
+}
+
+.countdownFill{
+  height:100%;
+  background:#4caf50;
+  transition:width 1s linear;
+}
+
+/* ================= RESPONSIVE ================= */
+/* Forgot-password screen and legacy face/OTP views */
+
+.emailLoginWrapper {
+  width: 100%; /* 100vw includes the scrollbar and causes sideways scroll */
+  height: 100dvh;
+  overflow-y: auto;
+  padding: 40px 16px 24px;
+  box-sizing: border-box;
+}
+
+.inputBox {
+  width: min(320px, 100%);
+  box-sizing: border-box;
+}
+
+.emailLoginWrapper .nextBtn {
+  max-width: 100%;
+}
+
+@media (max-width: 400px) {
+  .emailLoginWrapper {
+    padding-top: 28px;
+  }
+
+  .emailLoginWrapper h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-height: 500px) {
+  .emailLoginWrapper {
+    padding-top: 16px;
+  }
+}

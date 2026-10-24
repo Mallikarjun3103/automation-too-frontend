@@ -1,0 +1,19 @@
+
+services:
+  frontend:
+    image: noat_frontend_staging:${IMAGE_TAG:-latest}
+    container_name: noat_frontend_staging
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        REACT_APP_URL: https://noat.niruthi.com/api
+    ports:
+      - "3016:80"
+    networks:
+      - office_network
+    restart: unless-stopped
+
+networks:
+  office_network:
+    driver: bridge

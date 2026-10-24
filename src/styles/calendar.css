@@ -1,0 +1,57 @@
+.calendarWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.calendarCard {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 15px;
+  width: 260px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eaeaea;
+  text-align: center;
+}
+
+.calendarTitle {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+}
+
+.calendarInput {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.calendarInput:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.calendarConfirmBtn {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  background: #4a90e2;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.calendarConfirmBtn:hover {
+  background: #357bd8;
+}
+
+.calendarConfirmBtn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}

@@ -1,0 +1,61 @@
+.adminWrapper {
+  padding: 20px;
+}
+
+.adminHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.adminTable {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: black;
+}
+
+.adminTable th,
+.adminTable td {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  color: black;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.actions button {
+  margin-right: 8px;
+}
+
+button.danger {
+  background: #c0392b;
+  color: white;
+}
+
+.errorText {
+  color: salmon;
+}
+
+.actionsCell {
+  display: flex;
+  gap: 8px;
+}
+
+.adminTable select {
+  padding: 6px 8px;
+}
+
+.adminTable .danger {
+  background: #e53935;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.adminTable .danger:hover {
+  background: #c62828;
+}
